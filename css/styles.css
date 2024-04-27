@@ -1,0 +1,94 @@
+:root {
+    --main-text-color: #B6B6B6;
+    --secondary-text-color: #000000;
+    --heading-bg: #333333;
+    --accent-color: #95E1D3;
+    --secondary-accent-color: #F38181;
+    --bg-color: #ffffff;
+    --main-text-size: 15px;
+    --title-text-size: 30px;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    color: var(--main-text-color);
+    background-color: var(--bg-color);
+}
+
+/* .visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+  } */
+
+.container {
+    width: 1230px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.87;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+header {
+    padding-top: 0 18px;
+}
+
+header .logo {
+    margin-right: auto;
+}
+
+.nav-list {
+    display: flex;
+    gap: 56px;
+}
+
+.services-section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.services-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.services-list > li {
+    width: 332px;
+}
+
+.about-section {
+    padding-top: 50px;
+    padding-bottom: 80px;
+}
+
+.about-list {
+    display: flex;
+}
+
+footer {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}

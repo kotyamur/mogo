@@ -4,39 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mogo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@100..900&family=Roboto:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
 </head>
 <body>
     <!-- Шапка сторінки -->
     <header>
         <!-- The logo is always a link -->
-        <h1>
-            <a href="./">
-                <!-- <img 
-                    src="https://img.icons8.com/glyph-neue/64/camera--v1.png" 
-                    alt="MoGO" 
-                    width="40" 
-                />
-                <br/> -->
-                MoGO
-            </a>
-        </h1>
-        <nav>
-            <!--Меню навігації по інших сторінках -->
-            <ul>
-                <li><a href="#about">ABOUT</a></li>
-                <li><a href="#service">SERVICE</a></li>
-                <li><a href="./work.html">WORK</a></li>
-                <li><a href="./blog.html">BLOG</a></li>
-                <li><a href="./contact.html">CONTACT</a></li>
-            </ul>
-        </nav>
+        <div class="container flex">
+            <h1 class="logo">
+                <a href="./">
+                    <!-- <img 
+                        src="https://img.icons8.com/glyph-neue/64/camera--v1.png" 
+                        alt="MoGO" 
+                        width="40" 
+                    />
+                    <br/> -->
+                    MoGO
+                </a>
+            </h1>
+            <nav>
+                <!--Меню навігації по інших сторінках -->
+                <ul class="nav-list">
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#service">SERVICE</a></li>
+                    <li><a href="./">WORK</a></li>
+                    <li><a href="./">BLOG</a></li>
+                    <li><a href="./">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <!-- Унікальний контент сторінки -->
     <main>
-        <section>
-            <p id="service">We work with</p>
+        <section class="services-section">
+            <div class="container">
+                <p id="service">We work with</p>
             <h2>Amazing Services</h2>
-            <ul>
+            <ul class="services-list">
                 <li>
                     <h3>photography</h3>
                     <p>
@@ -80,19 +90,21 @@
                     </p>                    
                 </li>
             </ul>
+            </div>
         </section>
-        <section>
-            <p id="about">Who we are</p>
+        <section class="about-section">
+            <div class="container">
+                <p id="about">Who we are</p>
             <h2>Meet our team</h2>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
             </p>
-            <ul>
+            <ul  class="about-list">
                 <li>
                     <img 
                         src="./images/first-man.jpg" 
                         alt="first-man.jpg"
-                        width="380px"
+                        width="380"
                     >
                     <p>Matthew Dix</p> 
                     <h3>Graphic Design</h3>                   
@@ -101,7 +113,7 @@
                     <img 
                         src="./images/second-man.jpg" 
                         alt="second-man"
-                        width="380px"
+                        width="380"
                     >
                     <p>Christopher Campbell</p> 
                     <h3>Branding/UX design</h3>                   
@@ -110,18 +122,20 @@
                     <img 
                         src="./images/third-man.jpg" 
                         alt="third-man"
-                        width="380px"
+                        width="380"
                     >
                     <p>Michael Fertig</p> 
                     <h3>Developer</h3>                   
                 </li>
             </ul>
+            </div>
         </section>
     </main>
     <!-- Підвал сторінки -->
     <footer>
         <!-- Копірайт -->
-        <p>&copy; 2016 MoGo free PSD template by Laaqiq</p>
+        <div class="container">
+            <p>&copy; 2016 MoGo free PSD template by Laaqiq</p>
         <form>
             <input 
                 type="email"
@@ -130,6 +144,7 @@
             />
             <button type="submit">SUBSCRIBE</button>
         </form>
+        </div>
     </footer>
     
 </body>
