@@ -1,7 +1,7 @@
 :root {
     --main-text-color: #B6B6B6;
     --secondary-text-color: #000000;
-    --heading-bg: #333333;
+    --heading-color: #333333;
     --accent-color: #95E1D3;
     --secondary-accent-color: #F38181;
     --bg-color: #ffffff;
@@ -43,26 +43,53 @@ body {
     align-items: center;
 }
 
-.title {
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 1.87;
-    letter-spacing: -0.03em;
-    text-transform: uppercase;
+.pre-title {
+    margin-bottom: 20px;
+    font-family: "Kaushan Script", sans-serif;;
+    font-weight: 400;
+    font-size: 24px;
     text-align: center;
+    color: var(--heading-color);
+}
+
+.title {
+    margin-bottom: 60px;
+    font-weight: 700;
+    font-size: 30px;
+    font-variant: all-small-caps;
+    text-align: center;
+    color: var(--heading-color);
 }
 
 header {
-    padding-top: 0 18px;
+    padding: 18px 0px;
 }
 
 header .logo {
     margin-right: auto;
+    font-weight: 700;
+    font-size: 30px;
+    color: var(--accent-color);
 }
 
 .nav-list {
     display: flex;
     gap: 56px;
+}
+
+.nav-list a {
+    padding: 8px 0;
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--accent-color);
+}
+
+.nav-list .current {
+    color: var(--secondary-accent-color);
+}
+
+.nav-list a:hover {
+    color: var(--secondary-accent-color);
 }
 
 .services-section {
@@ -73,10 +100,27 @@ header .logo {
 .services-list {
     display: flex;
     flex-wrap: wrap;
+    row-gap: 102px;
+    column-gap: 102px;
 }
 
 .services-list > li {
     width: 332px;
+}
+
+.services-list h3 {
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 14px;
+    font-variant: small-caps;
+    color: var(--heading-color);
+}
+
+.services-list p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.47;
 }
 
 .about-section {
@@ -86,9 +130,81 @@ header .logo {
 
 .about-list {
     display: flex;
+    gap: 30px;
+}
+
+.about-description {
+    width: 1104px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 28px;
+    text-align: center;
+}
+
+.about-list p {
+    margin-top: 30px;
+    font-weight: 400;
+    font-size: 14px;
+    font-variant: all-small-caps;
+    text-align: center;
+    color: var(--heading-color);
+}
+
+.about-list h3 {
+    margin-top: 12px;
+    font-family: "Roboto", sans-serif;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 15px;
+    text-align: center;
+    color: var(--main-text-color);
 }
 
 footer {
     padding-top: 10px;
     padding-bottom: 10px;
+}
+
+.footer-copy {
+    margin-right: auto;
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--heading-color);
+}
+
+.footer-copy > span {
+    color: var(--secondary-accent-color);
+}
+
+.footer-form {
+    display: flex;
+}
+
+.footer-form > input {
+    width: 230px;
+    padding: 12px;
+    border: 1px solid var(--main-text-color);
+    border-right: none;
+}
+
+.footer-form > input::placeholder {
+    font-family: "Roboto", sans-serif;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 14px;
+    color: var(--main-text-color);
+}
+
+.footer-form > button {
+    min-width: 150px;
+    padding: 12px 36px;
+    outline: none;
+    border-color: transparent;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 14px;
+    font-variant: all-small-caps;
+    text-align: center;
+    color: #fff;
+    background-color: var(--accent-color);
 }

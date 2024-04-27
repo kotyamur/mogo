@@ -19,19 +19,13 @@
         <div class="container flex">
             <h1 class="logo">
                 <a href="./">
-                    <!-- <img 
-                        src="https://img.icons8.com/glyph-neue/64/camera--v1.png" 
-                        alt="MoGO" 
-                        width="40" 
-                    />
-                    <br/> -->
                     MoGO
                 </a>
             </h1>
             <nav>
                 <!--Меню навігації по інших сторінках -->
                 <ul class="nav-list">
-                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#about" class="current">ABOUT</a></li>
                     <li><a href="#service">SERVICE</a></li>
                     <li><a href="./">WORK</a></li>
                     <li><a href="./">BLOG</a></li>
@@ -44,8 +38,8 @@
     <main>
         <section class="services-section">
             <div class="container">
-                <p id="service">We work with</p>
-            <h2>Amazing Services</h2>
+                <p id="service" class="pre-title">We work with</p>
+            <h2 class="title">Amazing Services</h2>
             <ul class="services-list">
                 <li>
                     <h3>photography</h3>
@@ -94,9 +88,9 @@
         </section>
         <section class="about-section">
             <div class="container">
-                <p id="about">Who we are</p>
-            <h2>Meet our team</h2>
-            <p>
+                <p id="about" class="pre-title">Who we are</p>
+            <h2 class="title">Meet our team</h2>
+            <p class="about-description">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
             </p>
             <ul  class="about-list">
@@ -134,16 +128,16 @@
     <!-- Підвал сторінки -->
     <footer>
         <!-- Копірайт -->
-        <div class="container">
-            <p>&copy; 2016 MoGo free PSD template by Laaqiq</p>
-        <form>
-            <input 
-                type="email"
-                name="user_email"
-                placeholder="Your Email..."
-            />
-            <button type="submit">SUBSCRIBE</button>
-        </form>
+        <div class="container flex">
+            <p class="footer-copy">&copy; 2016 MoGo free PSD template by <span>Laaqiq</span></p>
+            <form class="footer-form">
+                <input 
+                    type="email"
+                    name="user_email"
+                    placeholder="Your Email..."
+                />
+                <button type="submit">SUBSCRIBE</button>
+            </form>
         </div>
     </footer>
     
