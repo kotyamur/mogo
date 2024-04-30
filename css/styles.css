@@ -59,6 +59,25 @@ body {
     font-variant: all-small-caps;
     text-align: center;
     color: var(--heading-color);
+
+    /* position: relative;
+    margin-bottom: 100px; */
+}
+
+.title::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: var(--secondary-accent-color);
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    /* display: inline-block;
+    position: absolute;
+    top: 40px;
+    left: 570px; */
 }
 
 header {
@@ -78,7 +97,8 @@ header .logo {
 }
 
 .nav-list a {
-    padding: 8px 0;
+    position: relative;
+    padding: 12px 0;
     font-weight: 400;
     font-size: 14px;
     color: var(--accent-color);
@@ -86,6 +106,16 @@ header .logo {
 
 .nav-list .current {
     color: var(--secondary-accent-color);
+}
+
+.nav-list .current::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: var(--secondary-accent-color);
 }
 
 .nav-list a:hover {
@@ -131,6 +161,29 @@ header .logo {
 .about-list {
     display: flex;
     gap: 30px;
+}
+
+.about-list .img-box {
+    position: relative;
+}
+
+.about-list .img-box::before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(
+         to bottom, 
+         rgba(255, 0, 0, 0.4), 
+         rgba(255, 255, 0, 0.4));
+    opacity: 0;
+}
+
+.about-list > li:hover .img-box::before {
+    opacity: 1;
 }
 
 .about-description {
